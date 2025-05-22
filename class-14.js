@@ -10,8 +10,8 @@ class Zametka {
     this.editForm = document.querySelector(".editForm");
 
     this.infoDialog = document.querySelector(".infoDialog");
-    this.infoName = document.querySelector(".infoName");
-    this.infoAge = document.querySelector(".infoAge");
+    this.infoTitle = document.querySelector(".infoTitle");
+    this.infoTask = document.querySelector(".infoTask");
     this.infoStatus = document.querySelector(".infoStatus");
     this.infoId = document.querySelector(".infoId");
 
@@ -64,8 +64,8 @@ class Zametka {
           method: "POST",
           headers: { "Content-type": "application/json" },
           body: JSON.stringify({
-            title: event.target["addName"].value,
-            description: event.target["addAge"].value,
+            title: event.target["addTitle"].value,
+            description: event.target["addTask"].value,
             status: event.target["addStatus"].value == "active",
             id: Date.now().toString(),
           }),
@@ -82,8 +82,8 @@ class Zametka {
           method: "PUT",
           headers: { "Content-type": "application/json" },
           body: JSON.stringify({
-            title: event.target["editName"].value,
-            description: event.target["editAge"].value,
+            title: event.target["editTitle"].value,
+            description: event.target["editTask"].value,
             status: event.target["editStatus"].value == "active",
             id: Date.now().toString(),
           }),
@@ -131,8 +131,8 @@ class Zametka {
       btnedit.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">  <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" /></svg>`;
       btnedit.onclick = () => {
         this.editDialog.showModal();
-        this.editForm["editName"].value = e.title;
-        this.editForm["editAge"].value = e.description;
+        this.editForm["editTitle"].value = e.title;
+        this.editForm["editTask"].value = e.description;
         this.editForm["editStatus"].value = e.status ? "active" : "inactive";
         this.idx = e.id;
       };
@@ -152,6 +152,10 @@ class Zametka {
 
       let div1 = document.createElement("div");
       let div2 = document.createElement("div");
+      div1.style.display = "flex"
+      div1.style.alignItems = "center"
+      div2.style.display = "flex"
+      div2.style.alignItems = "center"
       let divActions = document.createElement("div");
       divActions.classList.add("divActions");
 

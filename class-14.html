@@ -22,12 +22,12 @@
     <dialog class="addDialog">
         <form class="addForm">
             <label for="">TASK</label><br><br>
-            <input type="text" name="addName" placeholder="Name">
-            <select name="addStatus"><br>
+            <input type="text" name="addTitle" placeholder="Name" required>
+            <select name="addStatus" ><br>
                 <option value="active">Active</option>
                 <option value="inactive">Inactive</option>
             </select><br><br>
-            <textarea type="text" name="addAge" placeholder="Age"></textarea><br><br>
+            <textarea type="text" name="addTask" placeholder="Description" ></textarea><br><br>
             <button type="submit">Save</button>
             <button type="button" class="btnaddClose">cancel</button>
         </form>
@@ -36,20 +36,20 @@
     <dialog class="editDialog">
         <form class="editForm">
             <label for="">TASK</label><br><br>
-            <input type="text" name="editName" placeholder="Name">
+            <input type="text" name="editTitle" placeholder="Name" required>
             <select name="editStatus"><br>
                 <option value="active">Active</option>
                 <option value="inactive">Inactive</option>
             </select><br><br>
-            <textarea type="text" name="editAge" placeholder="Age"></textarea><br>
+            <textarea type="text" name="editTask" placeholder="Age"></textarea><br>
             <button type="submit">Save</button>
             <button type="button" class="btneditClose">cancel</button>
         </form>
     </dialog>
 
     <dialog class="infoDialog">
-        <p class="infoName"></p>
-        <p class="infoAge"></p>
+        <p class="infoTitle"></p>
+        <p class="infoTask"></p>
         <p class="infoStatus"></p>
         <p class="infoId"></p>
         <button type="button" class="btninfoClose">cancel</button>
