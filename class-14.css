@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+}
+
+.box {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 50px;
+}
+
+.Head {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.div {
+    width: 35%;
+    height: 150px;
+    padding: 20px;
+    background-color: #FFF9DE;
+    border-radius: 20px;
+}
+
+dialog {
+    margin: auto;
+    width: 400px;
+    padding: 50px;
+    border-radius: 20px;
+    border: none;
+}
+
+textarea {
+    max-width: 400px;
+    max-height: 100px;
+    min-width: 400px;
+    min-height: 100px;
+}
+
+.size-6 {
+    width: 24px;
+    height: 24px;
+    text-decoration: line-through;
+}
+
+.divActions {
+    display: flex;
+    justify-content: space-between;
+}
+
+button,
+select,
+input {
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.inpSearch {
+    border: 1px solid black;
+}
+
+.check {
+    width: 17px;
+    height: 17px;
+}
+
+button:hover {
+    background-color: #faf2cb;
+}
+
+button {
+    background-color: #FFF9DE;
+}
+
+.btnNewTask {
+    background-color: inherit;
+    font-size: 50px;
+    padding: 0 20px;
+}
+
+.divAll {
+    display: flex;
+
+}
+
+.box-1 {
+    width: 30%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.doira {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #B7B1DD;
+    padding: 10px;
+}
+
+.d2{
+    background-color: #81DCF0;
+
+}
+.d3{
+    background-color: #F8ABAB;
+
+}
+.d4{
+    background-color: #90F3D0;
+
+}
+
+.pdd {
+    padding: 10px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.work {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}

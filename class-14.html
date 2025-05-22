@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./class-14.css">
+</head>
+
+<body>
+    <div class="Head">
+        <select class="statusSearch">
+            <option value="all">All</option>
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+        </select>
+        <input type="text" class="inpSearch" placeholder="search...">
+        <button class="btnNewTask">+</button>
+    </div>
+
+    <dialog class="addDialog">
+        <form class="addForm">
+            <label for="">TASK</label><br><br>
+            <input type="text" name="addName" placeholder="Name">
+            <select name="addStatus"><br>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+            </select><br><br>
+            <textarea type="text" name="addAge" placeholder="Age"></textarea><br><br>
+            <button type="submit">Save</button>
+            <button type="button" class="btnaddClose">cancel</button>
+        </form>
+    </dialog>
+
+    <dialog class="editDialog">
+        <form class="editForm">
+            <label for="">TASK</label><br><br>
+            <input type="text" name="editName" placeholder="Name">
+            <select name="editStatus"><br>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+            </select><br><br>
+            <textarea type="text" name="editAge" placeholder="Age"></textarea><br>
+            <button type="submit">Save</button>
+            <button type="button" class="btneditClose">cancel</button>
+        </form>
+    </dialog>
+
+    <dialog class="infoDialog">
+        <p class="infoName"></p>
+        <p class="infoAge"></p>
+        <p class="infoStatus"></p>
+        <p class="infoId"></p>
+        <button type="button" class="btninfoClose">cancel</button>
+    </dialog>
+
+    <div class="divAll">
+        <div class="box-1">
+            <div>
+                <div class="work">
+                    <div class="doira d1"></div>
+                    <p class="pdd"> work </p>
+                </div>
+                <div class="work">
+                    <div class="doira d2"></div>
+                    <p class="pdd">stady</p>
+                </div>
+                <div class="work">
+                    <div class="doira d3"></div>
+                    <p class="pdd"> entertainment</p>
+                </div>
+                <div class="work">
+                    <div class="doira d4"></div>
+                    <p class="pdd">family</p>
+                </div>
+            </div>
+        </div>
+        <div class="box"></div>
+    </div>
+    <script src="./class-14.js"></script>
+</body>
+
+</html>
+<!-- npx json-server db.json  -->
