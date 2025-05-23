@@ -67,7 +67,8 @@ input {
     font-size: 15px;
 }
 
-.inpSearch {
+.inpSearch,
+.statusSearch {
     border: 1px solid black;
 }
 
@@ -112,15 +113,17 @@ button {
     padding: 10px;
 }
 
-.d2{
+.d2 {
     background-color: #81DCF0;
 
 }
-.d3{
+
+.d3 {
     background-color: #F8ABAB;
 
 }
-.d4{
+
+.d4 {
     background-color: #90F3D0;
 
 }

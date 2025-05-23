@@ -78,7 +78,7 @@ class Zametka {
     this.editForm.onsubmit = async (event) => {
       event.preventDefault();
       try {
-        let res = await fetch(`${this.api}/${this.idx}`, {
+        await fetch(`${this.api}/${this.idx}`, {
           method: "PUT",
           headers: { "Content-type": "application/json" },
           body: JSON.stringify({
